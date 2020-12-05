@@ -10,14 +10,14 @@ provider "azurerm" {
 #### Create a file main.tf with below content
 ```
 module "aks" {
-    source                                  =   "farrukh90/aks/azure"
+    source                                  =   "voyagese/aks/azure"
     cluster_name                            =   "example-aks1"
     kubernetes_version                      =   "1.18.4"
     node_pool_name                          =   "node1"
     min_count                               =   "3"
     max_count                               =   "5"
-    client_id                               =   ""
-    client_secret                           =   ""
+    client_id                               =   "ID"
+    client_secret                           =   "Password"
     environment                             =   "dev"
     resource_group_name_location            =   "West Europe"
     resource_group_name                     =   "dev"
